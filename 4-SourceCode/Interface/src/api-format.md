@@ -1,7 +1,9 @@
- API Specification
+API Specification
 
 ## Last Update: 2025/12/30
+
 #
+
 ## HTTP Status Codes
 
 | Code | Meaning      |
@@ -60,7 +62,7 @@
 
 ## Quiz AI Endpoints
 
-## 1. server helth status ///////////////////////////////////////////////////////done
+## 1. server helth status //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////done
 
 **URL:quiz-ai/helth**  
 **Method:GET**  
@@ -70,7 +72,7 @@
 
 none
 
-## 2. Log in ///////////////////////////////////////////////////////done
+## 2. Log in //////////////////////////////////////////////////////////////////////////////////////////////////////////////////done
 
 **URL:quiz-ai/login**  
 **Method:POST**  
@@ -114,7 +116,7 @@ none
 "data": null
 }
 
-## 3. Sign up ///////////////////////////////////////////////////////done
+## 3. Sign up ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////done
 
 **URL:quiz-ai/signup**  
 **Method:POST**  
@@ -159,15 +161,29 @@ none
 "data": null
 }
 
-## 4. PassWord recovery  ///////////////////////////////////////////////////////done
+<<<<<<< HEAD
+
+## 4. PassWord recovery ///////////////////////////////////////////////////////done
+
+=======
+
+## 4. PassWord recovery /////////////////////////////////////////////////////////////////////////////////////////////////////////////////done
+
+> > > > > > > c76d00c9ed42982fb204d75adefbba4865f9231a
 
 **URL:quiz-ai/ ? ?**  
 **Method:POST**  
 **Description:reassigning the password after sending an email to the user email and verifiying the code to set the new password**
 
-
+<<<<<<< HEAD
 
 ## 5. Quiz Generate
+
+=======
+
+## 5. Quiz Generate\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+> > > > > > > c76d00c9ed42982fb204d75adefbba4865f9231a
 
 **URL:quiz-ai/quiz/create**  
 **Method:POST**  
@@ -208,7 +224,15 @@ none
 }
 }
 
-## 6. Get exams based on User id    ///////////////////////////////////////////////////////done
+<<<<<<< HEAD
+
+## 6. Get exams based on User id ///////////////////////////////////////////////////////done
+
+=======
+
+## 6. Get exams based on User id ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////done
+
+> > > > > > > c76d00c9ed42982fb204d75adefbba4865f9231a
 
 **URL:quiz-ai/user/:id/exams**  
 **Method:GET**  
@@ -239,7 +263,15 @@ none
 }
 }
 
-## 7. Quiz delete    ///////////////////////////////////////////////////////////////done
+<<<<<<< HEAD
+
+## 7. Quiz delete ///////////////////////////////////////////////////////////////done
+
+=======
+
+## 7. Quiz delete /////////////////////////////////////////////////////////////////////////////////////////////////////////////done
+
+> > > > > > > c76d00c9ed42982fb204d75adefbba4865f9231a
 
 **URL:quiz-ai/quiz/delete**  
 **Method:DEL**  
@@ -251,7 +283,7 @@ none
 "quizId" : "1",
 }
 
-## 7. Rename Quiz /////////////////////////////////////////////////////////////////done
+## 8. Rename Quiz //////////////////////////////////////////////////////////////////////////////////////////////////////////////////done
 
 **URL:quiz-ai/quiz/:quizId/rename**  
 **Method:PUT**  
@@ -275,7 +307,7 @@ none
 }
 }
 
-## 8. Quiz submit
+## 9. Quiz submit \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 **URL:quiz-ai/quiz/submit**  
 **Method:POST**  
@@ -286,9 +318,9 @@ none
 {
 "examId": "exam_01",
 "answers": [
-{ "questionId": 101, "selectedOption": "a" },
-{ "questionId": 102, "selectedOption": "c" },
-{ "questionId": 103, "selectedOption": "b" }
+{ "questionId": 101, "selectedOptionId": "123" },
+{ "questionId": 102, "selectedOptionId": "122" },
+{ "questionId": 103, "selectedOptionId": "222" }
 ]
 }
 
@@ -297,28 +329,9 @@ none
 {
 "success": true,
 "status": 200,
-"data": {
-"totalMark": 85,
-"results": [
-{
-"questionId": 101,
-"isCorrect": true,
-"userSelected": "a",
-"correctOption": "a",
-"explanation": null
-},
-{
-"questionId": 102,
-"isCorrect": false,
-"userSelected": "c",
-"correctOption": "d",
-"referenceSection": "Chapter 4: Advanced AI Models"
-}
-]
-}
 }
 
-## 9. Question regenrate
+## 10. Question regenrate \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 **URL:quiz-ai/quiz/question/regenrate**  
 **Method:POST**  
@@ -348,7 +361,7 @@ none
 }
 }
 
-## 10. Question delete
+## 11. Question delete /////////////////////////////////////////////////////////////////////////////////////////////////////done
 
 **URL:quiz-ai/quiz/question/delete**  
 **Method:DEL**  
@@ -361,7 +374,7 @@ none
 "questionId": "4"
 }
 
-## 11. Quiz regenrate
+## 12. Quiz regenrate \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 **URL:quiz-ai/quiz/regenrate**  
 **Method:POST**  
@@ -397,13 +410,13 @@ none
 }
 }
 
-## 12. Share quiz (don't know how yet!) 
+## 12. Share quiz (don't know how yet!)
 
 **URL:**  
 **Method:**  
 **Description:**
 
-## 13. Get quiz based on quiz id
+## 14. Get quiz based on quiz id /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////done
 
 **URL:quiz-ai/quiz/:id**  
 **Method:GET**  
